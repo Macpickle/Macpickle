@@ -2,7 +2,7 @@
 <h3 align="center">A Inspired Programmer.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=macpickle&label=Profile%20views&color=0e75b6&style=flat" alt="macpickle" /> </p>
-<p><a href = "https://macpickle.github.io/Personal-Website.io/">Personal Website</a></p>
+<p><a href = "[https://macpickle.github.io/Personal-Website.io/](https://macpickle.github.io/Personal-website.io/)">Personal Website</a></p>
 -   I’m currently working on **CarSpotters Website**, **Arduino Weather Data Analysis**
 
 -   I’m currently learning **Computer Science at Ontario Tech University**
