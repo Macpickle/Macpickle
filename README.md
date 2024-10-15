@@ -20,7 +20,7 @@
 ###
 
 <p align="left">- <a href = "https://macpickle.github.io/Personal-website.io/">Personal Website</a>
-<br>- Currently working on Python Webbrowser<br>- Studying at Ontario Tech University</p>
+<br>- Currently working on Python Web browser<br>- Studying at Ontario Tech University</p>
 
 ###
 
