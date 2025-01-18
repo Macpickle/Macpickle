@@ -17,9 +17,9 @@
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
   </a>
 </div>
-I am a Computer Science Undergraduate at __Ontario Tech University__ \
-Working towards a __Summer 2025 CS Internship__
-Currently working on: **[Python Web Browser](https://github.com/Macpickle/Web-Browser)**
+I am a Computer Science Undergraduate at __Ontario Tech University__ <br>
+Working towards a __Summer 2025 CS Internship__ <br>
+Currently working on: **[Python Web Browser]('https://github.com/Macpickle/Web-Browser')**
 
 ### Technologies & Technologies
 <div align="left">
