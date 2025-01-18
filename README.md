@@ -1,33 +1,27 @@
-<div align="center">
+```
+ _____ ______   ________  ________  ________  ___  ________  ___  __    ___       _______      
+|\   _ \  _   \|\   __  \|\   ____\|\   __  \|\  \|\   ____\|\  \|\  \ |\  \     |\  ___ \     
+\ \  \\\__\ \  \ \  \|\  \ \  \___|\ \  \|\  \ \  \ \  \___|\ \  \/  /|\ \  \    \ \   __/|    
+ \ \  \\|__| \  \ \   __  \ \  \    \ \   ____\ \  \ \  \    \ \   ___  \ \  \    \ \  \_|/__  
+  \ \  \    \ \  \ \  \ \  \ \  \____\ \  \___|\ \  \ \  \____\ \  \\ \  \ \  \____\ \  \_|\ \ 
+   \ \__\    \ \__\ \__\ \__\ \_______\ \__\    \ \__\ \_______\ \__\\ \__\ \_______\ \_______\
+    \|__|     \|__|\|__|\|__|\|_______|\|__|     \|__|\|_______|\|__| \|__|\|_______|\|_______|
+```
+
+## Hey there, I'm Macpickle 👋
+<div align="left">
   <a href="https://www.linkedin.com/in/dylan-macleod/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
   </a>
-  <a href="dylanmacleod2005@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo"  />
+  <a href="mailto:dylanmacleod2005@gmail.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
   </a>
 </div>
+I am a Computer Science Undergraduate at __Ontario Tech University__ \
+Working towards a __Summer 2025 CS Internship__
+Currently working on: **[Python Web Browser](https://github.com/Macpickle/Web-Browser)**
 
-###
-
-<div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=Macpickle.Macpickle&right_color=cornflowerblue&left_text=Profile%20Views"  />
-</div>
-
-###
-
-<h1 align="center">Hello,<br>I'm Dylan.</h1>
-
-###
-
-<p align="left">- <a href = "https://macpickle.github.io/Personal-website.io/">Personal Website</a>
-<br>- Currently working on Python Web browser<br>- Studying at Ontario Tech University</p>
-
-###
-
-<h3 align="left">🗣️ Languages</h3>
-
-###
-
+### Technologies & Technologies
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
   <img width="12" />
@@ -37,39 +31,15 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
-</div>
-
-###
-
-<h3 align="left">🔨 Tools</h3>
-
-###
-
-<div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=express" height="40" alt="express logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="40" alt="spring logo"  />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=mongodb" height="40" alt="mongodb logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="40" alt="bash logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg" height="40" alt="opengl logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" height="40" alt="raspberrypi logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unix/unix-original.svg" height="40" alt="unix logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" height="40" alt="slack logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo"  />
 </div>
-
-###
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Macpickle&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=false&order=2" height="150" alt="languages graph"  />
-</div>
-
-###
