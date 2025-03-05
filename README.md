@@ -18,8 +18,7 @@
   </a>
 </div>
 I am a Computer Science Undergraduate at <strong>Ontario Tech University</strong> <br>
-Working towards a <strong>Summer 2025 CS Internship</strong> <br>
-Currently working on: <strong><a href="https://github.com/Macpickle/Web-Browser">Python Web Browser</a></strong>
+Currently working on: <strong><a href="[https://github.com/Macpickle/Web-Browser](https://github.com/Macpickle/Flash.AI)">Flash.AI</a></strong>
 
 ### Technologies & Technologies
 <div align="left">
