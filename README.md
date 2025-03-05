@@ -18,7 +18,7 @@
   </a>
 </div>
 I am a Computer Science Undergraduate at <strong>Ontario Tech University</strong> <br>
-Currently working on: <strong><a href="[https://github.com/Macpickle/Web-Browser](https://github.com/Macpickle/Flash.AI)">Flash.AI</a></strong>
+Currently working on: <strong><a href="https://github.com/Macpickle/Web-Browser">Flash.AI</a></strong>
 
 ### Technologies & Technologies
 <div align="left">
