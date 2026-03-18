@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan MacLeod | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a74a21bfbd.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <span class="preloader-text" id="preloader-text">Dylan MacLeod</span>
+    </div>
+
+    <!-- Skip to content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-50 backdrop-blur-xl" role="navigation" aria-label="Main navigation">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <a href="#about" class="text-base sm:text-lg font-bold tracking-tight" style="color: var(--text);">Dylan MacLeod</a>
+            <div class="flex items-center gap-3 sm:gap-6">
+                <div class="hidden md:flex gap-6 lg:gap-8 text-sm font-medium" style="color: var(--text-muted);">
+                    <a href="#about" class="nav-link" style="color: var(--text-muted);">About</a>
+                    <a href="#experience" class="nav-link" style="color: var(--text-muted);">Experience</a>
+                    <a href="#projects" class="nav-link" style="color: var(--text-muted);">Projects</a>
+                    <a href="#skills" class="nav-link" style="color: var(--text-muted);">Skills</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn md:hidden" onclick="toggleMobileMenu()" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden" role="menu" aria-hidden="true">
+            <a href="#about" class="mobile-menu-link" role="menuitem" onclick="closeMobileMenu()">About</a>
+            <a href="#experience" class="mobile-menu-link" role="menuitem" onclick="closeMobileMenu()">Experience</a>
+            <a href="#projects" class="mobile-menu-link" role="menuitem" onclick="closeMobileMenu()">Projects</a>
+            <a href="#skills" class="mobile-menu-link" role="menuitem" onclick="closeMobileMenu()">Skills</a>
+        </div>
+    </nav>
+
+    <main id="main-content" class="w-full px-4 pb-16 sm:px-8 md:px-14 lg:px-24 xl:px-32">
+
+        <!-- Hero -->
+        <section id="about" class="hero-layout mx-auto grid min-h-[calc(100vh-88px)] w-full max-w-6xl grid-cols-1 items-center gap-6 pt-24 pb-12 sm:pt-28 md:grid-cols-2 md:gap-16 md:py-0">
+            <div class="reveal flex flex-col justify-center text-center md:text-left">
+                <h1 class="gradient-text mb-4 text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+                    Dylan<br>MacLeod
+                </h1>
+                <p class="mx-auto max-w-xl text-sm sm:text-base md:mx-0 md:text-lg leading-relaxed" style="color: var(--text-muted);">
+                    Computer Science student and full-stack developer focused on practical, reliable software.
+                    Building modern products with clean UI, strong system design, and real-world impact.
+                </p>
+                <div class="mt-5 sm:mt-6 flex flex-wrap gap-2 sm:gap-3 justify-center md:justify-start">
+                    <a class="social-link" href="https://github.com/Macpickle" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span>
+                    </a>
+                    <a class="social-link" href="https://www.linkedin.com/in/dylan-macleod/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
+                    </a>
+                    <a class="social-link" href="mailto:dylanmacleod2005@gmail.com" aria-label="Send email">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i><span>Email</span>
+                    </a>
+                    <a class="social-link" href="DylanM_Resume.pdf" download="DylanM_Resume.pdf" aria-label="Download resume">
+                        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i><span>Resume</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-media reveal relative flex items-center justify-center min-h-[280px] sm:min-h-[360px] md:min-h-[420px]">
+                <div class="hero-glow" aria-hidden="true"></div>
+                <div class="image-stack">
+                    <img src="https://macpickle.github.io/src/images/City.JPG" alt="City photography" class="stack-img stack-one" loading="lazy">
+                    <img src="https://macpickle.github.io/src/images/HackHive.JPG" alt="HackHive event photo" class="stack-img stack-two" loading="lazy">
+                    <img src="https://macpickle.github.io/src/images/Mainframe.JPG" alt="Mainframe work photo" class="stack-img stack-three" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section-card reveal mx-auto mt-8 w-full max-w-6xl p-6 md:p-10">
+            <p class="section-kicker">Education</p>
+            <div class="mt-2 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                <h2 class="gradient-text text-2xl font-bold md:text-3xl">Ontario Tech University</h2>
+                <p style="color: var(--text-muted);">Ontario, CA</p>
+            </div>
+            <div class="mt-3 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                <p style="color: var(--text-muted);" class="md:text-lg">Bachelor of Science in <strong>Computer Science</strong> &mdash; <strong>CO-OP</strong> &mdash; <strong>3.8 GPA</strong></p>
+                <p style="color: var(--text-muted);"><strong>Expected 2028</strong></p>
+            </div>
+            <ul class="resume-list">
+                <li>President's List and Honour Roll Student</li>
+                <li>Relevant Coursework: Data Structures and Algorithms, Object-Oriented Programming, Systems Programming</li>
+            </ul>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section-card reveal mx-auto mt-8 w-full max-w-6xl p-6 md:p-10">
+            <p class="section-kicker">Experience</p>
+
+            <article class="mt-3 pb-7" style="border-bottom: 1px solid var(--border);">
+                <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                    <h3 class="text-2xl font-bold md:text-3xl gradient-text">Mainframe Engineer</h3>
+                    <p style="color: var(--text-muted);">Sept 2025 &ndash; April 2026</p>
+                </div>
+                <p class="mt-2 md:text-lg" style="color: var(--text-muted);"><strong>CIBC</strong> &middot; z/OS, JCL, REXX, TSO/ISPF</p>
+                <ul class="resume-list">
+                    <li>Gained expertise in <strong>IBM z/OS architecture</strong>, batch processing workflows, and dataset management while working with enterprise job control using <strong>JCL</strong>.</li>
+                    <li>Wrote automation scripts using <strong>REXX</strong> and <strong>OPS/MVS</strong> to support event-driven monitoring, alert handling, and operational task automation.</li>
+                    <li>Contributed to automated monitoring and recovery workflows that improved <strong>system reliability</strong> and reduced manual operational intervention.</li>
+                    <li>Earned <strong>20+ technical badges</strong> through IBM Z Xplore and IBM Skills Depot covering z/OS operations, system automation, REXX scripting, and enterprise batch processing.</li>
+                </ul>
+            </article>
+
+            <article class="pt-7">
+                <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                    <h3 class="text-2xl font-bold md:text-3xl gradient-text">Project Coordinator</h3>
+                    <p style="color: var(--text-muted);">May 2025 &ndash; August 2025</p>
+                </div>
+                <p class="mt-2 md:text-lg" style="color: var(--text-muted);"><strong>CIBC</strong> &middot; JavaScript, Python, Power Automate, Excel, SharePoint</p>
+                <ul class="resume-list">
+                    <li>Coordinated deliverables across multiple banking initiatives exceeding <strong>$1M</strong>, assisting project managers with progress tracking, timeline management, and risk mitigation.</li>
+                    <li>Integrated customized <strong>Power Automate</strong> flows and scripts utilizing <strong>Python</strong> and <strong>JavaScript</strong> to automate Outlook email routing and SharePoint file organization, reducing manual report generation time and minimizing human error.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="mx-auto mt-8 w-full max-w-6xl">
+            <div class="section-card reveal p-6 md:p-10">
+                <p class="section-kicker">Projects</p>
+                <h2 class="gradient-text text-2xl font-bold md:text-3xl mt-2">Featured Work</h2>
+                <p class="mt-2 max-w-3xl md:text-lg" style="color: var(--text-muted);">Here are projects I've built and shipped.</p>
+
+                <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+
+                    <!-- Flash.AI -->
+                    <article class="project-card reveal">
+                        <div class="card-image">
+                            <div class="h-52 overflow-hidden relative">
+                                <img src="https://macpickle.github.io/src/images/flash.png" alt="Flash.AI project screenshot" class="w-full h-full object-cover" loading="lazy">
+                                <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md text-white text-xs font-semibold px-3 py-1.5 rounded-full">Top 2.3%</div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold gradient-text">Flash.AI</h3>
+                            <p class="mt-2 text-sm" style="color: var(--text-muted);">React, Express.js, MongoDB, JavaScript, Node.js, TailwindCSS</p>
+                            <a class="project-link mt-3 inline-block" href="https://github.com/Macpickle/Flash.AI" target="_blank" rel="noreferrer">View on GitHub <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                            <ul class="resume-list">
+                                <li>Engineered a full-stack AI platform at HackHive 2025, placing <strong>2nd out of 86 teams</strong>.</li>
+                                <li>Built backend APIs using <strong>Node.js</strong> and <strong>Express</strong> to generate quizzes from uploaded documents in <strong>under 10 seconds</strong>.</li>
+                                <li>Implemented <strong>JWT-based authentication</strong> and secure credential storage using <strong>MongoDB</strong>.</li>
+                                <li>Developed a responsive <strong>React</strong> interface for document upload, quiz generation, and profile management.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Semantic Search Engine -->
+                    <article class="project-card reveal">
+                        <div class="card-image">
+                            <div class="h-52 overflow-hidden relative">
+                                <img src="https://macpickle.github.io/src/images/search.png" alt="Semantic Search Engine project screenshot" class="w-full h-full object-cover" loading="lazy">
+                                <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md text-white text-xs font-semibold px-3 py-1.5 rounded-full">~45ms latency</div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold gradient-text">Semantic Search Engine</h3>
+                            <p class="mt-2 text-sm" style="color: var(--text-muted);">C++, Python, ONNX Runtime, PostgreSQL, HNSW, NLP</p>
+                            <a class="project-link mt-3 inline-block" href="https://github.com/Macpickle/Wiki-Search-Engine" target="_blank" rel="noreferrer">View on GitHub <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                            <ul class="resume-list">
+                                <li>Designed a semantic search engine for Wikipedia articles using transformer embeddings and <strong>HNSW indexing</strong>.</li>
+                                <li>Integrated <strong>all-MiniLM-L6-v2</strong> via <strong>ONNX Runtime</strong> for <strong>384-dimensional embeddings</strong> at ~100 articles/sec.</li>
+                                <li>Implemented vector storage with <strong>PostgreSQL</strong> + HNSW, scaling across <strong>100k+ indexed documents</strong>.</li>
+                                <li>Achieved <strong>~45 ms average query latency</strong> for top-K results across 10k articles.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Web Browser -->
+                    <article class="project-card reveal">
+                        <div class="card-image">
+                            <div class="h-52 overflow-hidden relative">
+                                <img src="https://macpickle.github.io/src/images/browser.png" alt="Web Browser project screenshot" class="w-full h-full object-cover" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold gradient-text">Web Browser</h3>
+                            <p class="mt-2 text-sm" style="color: var(--text-muted);">Python, Tkinter, Custom HTML/CSS/URL Parsing</p>
+                            <a class="project-link mt-3 inline-block" href="https://github.com/Macpickle/Web-Browser" target="_blank" rel="noreferrer">View on GitHub <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                            <ul class="resume-list">
+                                <li>Built a working browser in <strong>Python</strong> with custom <strong>HTML parser</strong>, <strong>CSS parser</strong>, URL handling, and rendering across <strong>10+ core modules</strong>.</li>
+                                <li>Implemented tabs, address bar, back/forward navigation, and scroll behavior with <strong>250-400ms render times</strong>.</li>
+                                <li>Added stylesheet loading, layout/paint passes, and interactive elements, reducing rendering errors by <strong>~40%</strong>.</li>
+                                <li>Built UI with <strong>CustomTkinter/Tkinter Canvas</strong> and modular components for parsing, rendering, and navigation.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Chatroom-REACT -->
+                    <article class="project-card reveal">
+                        <div class="card-image">
+                            <div class="h-52 overflow-hidden relative">
+                                <img src="https://macpickle.github.io/src/images/chat.png" alt="Chatroom-REACT project screenshot" class="w-full h-full object-cover" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold gradient-text">Chatroom-REACT</h3>
+                            <p class="mt-2 text-sm" style="color: var(--text-muted);">React, Node.js, MongoDB, JavaScript, Google Generative AI, NodeMailer</p>
+                            <a class="project-link mt-3 inline-block" href="https://github.com/Macpickle/Chatroom-REACT" target="_blank" rel="noreferrer">View on GitHub <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                            <ul class="resume-list">
+                                <li>Built a full-stack chatroom app with direct messaging, profile settings, and theme customization using <strong>React</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>.</li>
+                                <li>Implemented real-time style message updates and cleaned up the chat UI for a smoother send/read experience.</li>
+                                <li>Integrated <strong>Google Generative AI</strong> chat feature that starts conversations for newly registered users.</li>
+                                <li>Added <strong>NodeMailer</strong> and MongoDB-backed persistence, reducing message/session issues by <strong>~25%</strong>.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section-card reveal mx-auto mt-8 w-full max-w-6xl p-6 md:p-10">
+            <p class="section-kicker">Technical Skills</p>
+            <h2 class="gradient-text text-2xl font-bold md:text-3xl mt-2 mb-6">What I Work With</h2>
+
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+
+                <!-- Languages -->
+                <div class="skill-category">
+                    <h3 class="text-lg font-semibold flex items-center gap-2">
+                        <span style="color: var(--text-muted);"><i class="fa-solid fa-code text-sm"></i></span> Languages
+                    </h3>
+                    <div class="flex flex-wrap gap-2 mt-3 mb-4">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">C++</span>
+                        <span class="skill-pill">Java</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">TypeScript</span>
+                        <span class="skill-pill">SQL</span>
+                        <span class="skill-pill">HTML/CSS</span>
+                        <span class="skill-pill">JCL</span>
+                        <span class="skill-pill">REXX</span>
+                    </div>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-item">
+                            <span class="skill-bar-label">C++</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar-label">Python</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar-label">Java</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar-label">REXX</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-category">
+                    <h3 class="text-lg font-semibold flex items-center gap-2">
+                        <span style="color: var(--text-muted);"><i class="fa-solid fa-layer-group text-sm"></i></span> Frameworks
+                    </h3>
+                    <div class="flex flex-wrap gap-2 mt-3 mb-4">
+                        <span class="skill-pill">React</span>
+                        <span class="skill-pill">Node.js</span>
+                        <span class="skill-pill">Express</span>
+                        <span class="skill-pill">TailwindCSS</span>
+                        <span class="skill-pill">Tkinter</span>
+                        <span class="skill-pill">CustomTkinter</span>
+                    </div>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-item">
+                            <span class="skill-bar-label">React</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar-label">Node.js</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar-label">Express</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category">
+                    <h3 class="text-lg font-semibold flex items-center gap-2">
+                        <span style="color: var(--text-muted);"><i class="fa-solid fa-screwdriver-wrench text-sm"></i></span> Tools & Platforms
+                    </h3>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="skill-pill">Git</span>
+                        <span class="skill-pill">Linux</span>
+                        <span class="skill-pill">z/OS</span>
+                        <span class="skill-pill">GCP</span>
+                        <span class="skill-pill">VS Code</span>
+                        <span class="skill-pill">IntelliJ</span>
+                        <span class="skill-pill">MongoDB</span>
+                        <span class="skill-pill">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- Libraries & Other -->
+                <div class="skill-category">
+                    <h3 class="text-lg font-semibold flex items-center gap-2">
+                        <span style="color: var(--text-muted);"><i class="fa-solid fa-cubes text-sm"></i></span> Libraries & Enterprise
+                    </h3>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="skill-pill">pandas</span>
+                        <span class="skill-pill">NumPy</span>
+                        <span class="skill-pill">Matplotlib</span>
+                        <span class="skill-pill">Passport JS</span>
+                        <span class="skill-pill">SDSF</span>
+                        <span class="skill-pill">RACF</span>
+                        <span class="skill-pill">TSO/ISPF</span>
+                        <span class="skill-pill">Power Automate</span>
+                        <span class="skill-pill">SharePoint</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="text-sm" style="color: var(--footer-text);">&copy; 2026 Dylan MacLeod</p>
+            <div class="footer-links">
+                <a class="footer-link" href="https://github.com/Macpickle" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span>
+                </a>
+                <a class="footer-link" href="https://www.linkedin.com/in/dylan-macleod/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
+                </a>
+                <a class="footer-link" href="mailto:dylanmacleod2005@gmail.com" aria-label="Send email">
+                    <i class="fa-regular fa-envelope" aria-hidden="true"></i><span>Email</span>
+                </a>
+                <a class="footer-link" href="DylanM_Resume.pdf" download="DylanM_Resume.pdf" aria-label="Download resume">
+                    <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i><span>Resume</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
